@@ -23,7 +23,7 @@ class Board
   end
 
   def draw?
-    grid.flatten.none?(&:nil?) && !winner?('X') && !winner?('O')
+    grid.flatten.none?(&:nil?) && !winner?("\u25CF") && !winner?("\u25CB")
   end
 
   private
